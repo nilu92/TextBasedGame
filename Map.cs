@@ -9,7 +9,7 @@ namespace TextGame
         {
          //Fixa Array och for loop som skapar kartan.
         
-        
+            
         }
     }
 }

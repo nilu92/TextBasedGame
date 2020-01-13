@@ -5,6 +5,10 @@ namespace TextGame
     class Program
     {
         private Menu menu;
+       
+       
+       
+
 
         static void Main(string[] args)
         {

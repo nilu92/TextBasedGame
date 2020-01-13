@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MyNamespace
+namespace TextGame
 {
     public class Map
     {
@@ -7,7 +7,7 @@ namespace MyNamespace
         //Constructor
         public Map()
         {
-        
+         //Fixa Array och for loop som skapar kartan.
         
         
         }

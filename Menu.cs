@@ -2,41 +2,48 @@
 
 namespace TextGame
 {
+
     public class Menu
     {
+        int position;
+        int health;
+        int keys;
+        bool isAlive;
+        string name;
+        
+
+
+
+        public Game game;
         public Menu()
         {
-
+            game = new Game();
         }
         public void MainMenu()
         {
             Console.Clear();
-            bool running = true;
-            while (running)
+            int Action;
+            Action = int.Parse(Console.ReadLine());
+            Console.WriteLine("[1]New\n" + "[2]Exit");
+
+            switch (Action)
             {
-                Console.WriteLine("[1]New game");
-                Console.WriteLine("[2]exit");
-                Console.ReadLine();
-
-                string Action = Console.ReadLine();
-                switch (Action)
-                {
-                    case "1":
-                        Console.WriteLine("This will start a new game");
-                        Console.ReadLine();
-                        break;
-                    case "2":
-                        Environment.Exit(1);
-                        break;
-
-                    default:
-                        Console.WriteLine("Wrong input!");
-                        Console.ReadLine();
-                        MainMenu();
-                        break;
-                }
+                case 1:
+                    Game.GameStart(position, health,keys,isAlive, name);
+                    break;
+                case 2:
+                    Environment.Exit(1);
+                    break;
+                default:
+                    break;
             }
+            Console.ReadLine();
         }
+
+
+
+
+
 
 
     }
